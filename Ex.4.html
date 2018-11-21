@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Not only Rudolf's nose is red...</title>
+    <title>hTmL</title>
     <link rel="stylesheet" href="main.css">
-<!--    <script>
+    <script>
         window.onload = function(){
             var submitBtn = document.getElementById("submitBtn");
             submitBtn.onclick=function(){
@@ -13,24 +13,52 @@
                 alert("Hello " + nick.value);
             }
         }
-    </script>-->
+    </script>
 </head>
 
 <body>
     <form>
-        <!--<div>
+        <div>
             <label for="nickname">Your nickname</label>
         </div>
         <div>
             <input type="text" id="nickname" name="nickname">
         </div>
+
+        First name:<br><!--Nickname will be displayed the same way as first- and last-name -->
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname"><br>
         <div>
-            <input type="email" id="user-email" name="user-email" required placeholder="input e-mail address">
+            E-mail:<br>
+            <input type="email" id="user-email" name="user-email" required placeholder="Input e-mail address">
         </div>
         <div>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" value="male" checked> Male<br><!--Multiple choice display (radio)-->
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+        </div>
+        <div>
+            <label for="haircolor">Haircolour</label><br>
+            <select name="haircolor"><!--Dropdown list (select)-->
+                <option value="blonde">Blonde</option>
+                <option value="brown">Brown</option>
+                <option value="black">Black</option>
+                <option value="ginger" selected>Ginger</option><!--Preselected from dropdown list (selected)-->
+              </select>
+        </div>
+        <div>
+            <input type="submit" id="submitBtn" value="Submit">
+        </div>
+        <form action="/action_page.php"></form>
+        <div>
             <label type="content">Content:</label>
-        </div>-->
+        </div>
+        <div>
+            <textarea rows="10" cols="50" id="content" name="content"
+            placeholder="Enter comment here."></textarea>
+        </div>
     </form>
 </body>
-
 </html>
